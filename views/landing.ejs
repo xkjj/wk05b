@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/" class="brand">
+            <img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-amazon-music-3889585-3222715.png" />
+            <span> playlists</span>
+        </a>
+        <div class="menu">
+            <a class="button" href="/playlist">
+                <%= user %>'s Playlist
+            </a>
+        </div>
+    </nav>
+    <div class="flex two mymargin">
+        <h1>Popular Playlists</h1>
+        <div class="mypadtop">
+            Popular site to share playlists.
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="flex two three-600 six-1200">
+
+            <% data.forEach((row)=> { %>
+                <div>
+                    <article class="card">
+                        <header>
+                            <h3>
+                                <%=row.name%>
+                            </h3>
+                        </header>
+                        <p>Likes <%=row.likes%>
+                        </p>
+                        <footer>
+                            <button>Like</button>
+                        </footer>
+                    </article>
+                </div>
+
+                <% }); %>
+                    <div>
+
+
+                    </div>
+
+        </div>
+
+
+</body>
+
+</html>

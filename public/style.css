@@ -1,0 +1,12 @@
+.mymargin{
+    margin-top: 100px;
+}
+
+.mypadtop{
+    padding-top: 20px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
